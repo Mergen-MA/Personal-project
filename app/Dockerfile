@@ -1,16 +1,26 @@
 FROM node:alpine
 
-WORKDIR /webapp
-
-COPY package.json .
-
-RUN npm install
+WORKDIR /home/ec2-user/webapp
 
 COPY . .
 
-EXPOSE 80
+RUN npm install
 
 CMD ["npm", "start"]
+
+# FROM node:alpine
+
+# WORKDIR /webapp
+
+# COPY package.json .
+
+# RUN npm install
+
+# COPY . .
+
+# EXPOSE 80
+
+# CMD ["npm", "start"]
 
 
 # FROM nginx:latest
