@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   webapp:
-    image: mali/webapp:latest
+    image: mali/webapp:alpine
     container_name: portfolio-app
     restart: always
     ports:
