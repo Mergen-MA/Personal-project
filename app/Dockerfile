@@ -1,12 +1,16 @@
-FROM node:alpine
+FROM nginx:alpine
 
-WORKDIR /home/ec2-user/webapp
+# Set the working directory
+WORKDIR /usr/share/nginx/html
 
+# Copy your application files to the container
 COPY . .
 
-RUN npm install
+# Specify the port your application will run on
+EXPOSE 80
 
-CMD ["npm", "start"]
+
+
 
 # FROM node:alpine
 
