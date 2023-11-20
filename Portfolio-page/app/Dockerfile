@@ -4,7 +4,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy your application files to the container
-COPY Personal-project/Portfolio-Page/app /usr/share/nginx/html
+COPY Personal-project/Portfolio-Page/app .
 
 EXPOSE 80
 
