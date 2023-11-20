@@ -4,9 +4,8 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy your application files to the container
-COPY . .
+COPY Personal-project/Portfolio-Page/app /usr/share/nginx/html
 
-# Specify the port your application will run on
 EXPOSE 80
 
 
